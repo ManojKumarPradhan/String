@@ -69,8 +69,43 @@ public class App {
 		// startWith() check weather the String start with given String or not
 		// it is overloaded method same endsWith()
 		System.out.println(s.startsWith("J"));
-		
-		//indexOf()  --> return index number of given character
+
+		// indexOf() --> return index number of given character
 		System.out.println(s.indexOf('o'));
+
+		// same functionality with lastIndexOf() , indexOf(String)
+
+		// subString() it is also overloaded method
+		// it will throw StringIndexOurOfBoundException if index number is not
+		// in the range of string
+		System.out.println(s.substring(1, 5));
+
+		// subSequence() same as subString() but it will return CharSequence
+		// which is the parent of String and StringBuffer and StringBuilder
+		// class
+
+		// concat() -->this method always take a String and concat with calling
+		// String
+		System.out.println(s.concat("HI"));
+
+		// replace() --> replace the Character in the String with new Character
+		System.out.println(s.replace('o', '0'));
+
+		System.out.println(s.matches("Joker"));// matches content
+
+		System.out.println(s.contains("o"));// check given content is present or
+											// not
+
+		System.out.println(s.replaceAll("o", "00")); // replace 1 param with 2nd
+														// param
+
+		System.out.println("     mm    m".trim()); // delete first spaces
+
+		String s4 = new String("Joker").intern();
+		System.out.println(s4);
+		// here joker is present in String pool
+		// what intern() does is when it called it will check first that the
+		// given String is present or not in String pool area if there then it
+		// will return the reference
 	}
 }
