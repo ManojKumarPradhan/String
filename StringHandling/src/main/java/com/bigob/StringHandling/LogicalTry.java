@@ -3,6 +3,7 @@ package com.bigob.StringHandling;
 public class LogicalTry {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("unused")
 		int i;
 		try {
 			i = 30;
